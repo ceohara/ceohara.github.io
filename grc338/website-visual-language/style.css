@@ -1,0 +1,192 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(images/background.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	max-width: 85em;
+	margin: auto;
+	background-color: rgb(250, 250, 250);
+	
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	max-width: 85em;
+	margin: auto;
+	background-color: rgb(250, 250, 250);
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 2em 1.5em 1em;
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 13em auto;
+	background-color: rgb(204, 204, 204);
+	padding: 1em 1em 0.2em;
+	}
+
+h1 {
+	width: 15em;
+	}
+
+h2, h3, h4 {
+		font-weight: bold;
+		margin: 0.5em 0.5em 0em 0.5em;
+		font-family: "adobe-aldine", sans-serif;
+		font-style: normal;
+		font-size: 1.5em;
+	}
+
+h2 {
+	font-size: 2.5em;
+	margin: 1em 0.5em 0.5em;
+	}
+	
+h3 {
+	font-size: 1.5em;
+	margin: 1em 1em 0.5em;
+}
+
+a {
+	text-decoration: none;
+	}
+
+nav ul  {
+	text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: sans-serif;
+	margin: 1.5em 0em 1em;	}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 1em;
+	padding: 0.25em 1.5em;
+}
+main.menu ul {
+		margin: 0.5em 0.5em 4em;
+}	
+
+main.menu ul li {
+		margin: 0.5em 0.5em 0.5em;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+}	
+
+p {
+	margin: 0.75em 0.5em 0.75em;
+	font-family: "indivisible", sans-serif;
+	font-style: normal;
+	}
+	
+p.description {
+	grid-column: 1/4;
+	margin: 0em 0.5em 1em;
+	}
+	
+p.price {
+	grid-row: 1/2;
+	grid-column: 4/5;
+	color: rgb(204, 204, 204);
+	text-align:center;
+	margin: 0.5em;
+	}
+	
+nav ul li {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1em;
+	font-size: 2em;
+	}
+	
+nav ul li a {
+	color: rgb(160, 188, 146);
+	padding: 0.3em 0.25em 0.2em;
+    text-decoration: none;
+}
+	
+
+p.slogan {
+	font-size: 3.4em;
+	font-family: serif;
+	font-style: italic;
+	margin: 0.75em 0em 1em;
+	color: rgb(160, 188, 146);	
+	}
+
+p.schedule{
+	margin: 1em 1.5em;
+}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1em 1em;
+  background: rgb(160, 188, 146);
+}
+
+address {
+	color: rgb(160, 188, 146);
+	font-family: sans-serif;
+	margin: 0.5em 1em;
+	}
+
+article{
+	padding: 0.5em;
+}
+body {
+	font-family: sans-serif;
+	background-color: rgb(160, 188, 146);
+	}
+
+footer p {
+	margin: 0em;
+}
+
+nav ul li.selected a {
+	color: rgb(250, 250, 250);
+}
+
+@media screen and (min-width: 60em) {
+	article{
+		margin: 1em 20em 5em;
+		line-height: 1.5em;
+	}
+	nav ul li a{
+		text-align: right;
+		margin: 1.5em 0em 1em;
+
+	}
+
+	nav ul li{
+		display: inline;
+	}
+	ul.menu{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+			}
+}
